@@ -31,7 +31,7 @@ Desktop.ini
 desktop.ini
 
 # Maintenance working/build data
-data/
+/data/
 
 # Temporary files
 *.tmp
