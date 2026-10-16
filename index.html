@@ -5,12 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="KJxjORQWJ0J3Ph97apKEwc9daChnUtBvnvwsIXLsEc4" />
 
-  <title>iTópos</title>
+  <!-- Standard Search Engine Tags -->
+  <title>iTópos | Explore and Map Pleiades Places</title>
   <meta name="description"
-        content="iTópos is an open-source, browser-based tool for exploring the geography and temporal evidence of places in the ancient world using the Pleiades gazetteer. Map a list of Pleiades IDs from a spreadsheet, browse the local Pleiades corpus by name, Feature Category, or Time Period, explore spatial patterns, and export place data for further research.">
+        content="iTópos is a free web application for browsing, filtering, mapping, and exploring temporal evidence for places in the Pleiades gazetteer. Upload Pleiades IDs from CSV or Excel.">
+  <meta name="robots" content="index, follow" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://dhtoolbox.github.io/itopos/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "iTópos",
+    "url": "https://dhtoolbox.github.io/itopos/",
+    "description": "A free web application for browsing, filtering, mapping, and exploring temporal evidence for places in the Pleiades gazetteer.",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Digital humanities and historical geography",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires a modern web browser with JavaScript enabled.",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "featureList": [
+      "Browse and map Pleiades places",
+      "Upload Pleiades IDs from CSV and Excel",
+      "Filter by Feature Category and Time Period",
+      "Explore Pleiades temporal evidence",
+      "Export mapped Places as CSV or JSON"
+    ],
+    "about": {
+      "@type": "Thing",
+      "name": "Pleiades gazetteer",
+      "url": "https://pleiades.stoa.org/"
+    },
+    "sameAs": "https://github.com/dhtoolbox/itopos"
+  }
+  </script>
+
+  <!-- Link Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="iTópos">
+  <meta property="og:title" content="iTópos | Explore and Map Pleiades Places">
+  <meta property="og:description"
+        content="Browse, filter, map, and explore places in the Pleiades gazetteer.">
+  <meta property="og:url" content="https://dhtoolbox.github.io/itopos/">
+  <meta property="og:image"
+        content="https://dhtoolbox.github.io/itopos/static/itopos-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+        content="iTópos map showing Pleiades places and Temporal Exploration">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt"
+        content="iTópos map showing Pleiades places and Temporal Exploration">
+
 
   <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.2.0/dist/maplibre-gl.css"
@@ -23,7 +73,7 @@
   <div class="site-title">
     <h1>
       <span class="site-title__brand">iTópos</span>
-      <i>Map your Pleiades places</i>
+      <i>Explore and map your Pleiades places</i>
     </h1>
   </div>
   <div id="app-status" class="app-status" role="status" aria-live="polite" hidden></div>
